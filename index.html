@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Favicon definition  -->
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+		<!-- Initiate page-wide attributes  -->
+		<title>The Cink's Bay Area Recommendations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Load all CSS  -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="unslider-master/dist/css/unslider-dots.css" type="text/css"/>
+		<link rel="stylesheet" href="unslider-master/dist/css/unslider.css" type="text/css"/>
+		<link rel="stylesheet" href="assets/css/map-icons.css" type="text/css"/>
+		<!-- Load all Javascript (jQuery 2.1.4 files)  -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyBLTjIT2qAaJUv6y73GaU-QLaenjIhdpTI&libraries=geometry"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="http://airve.github.io/js/response/response.min.js"></script>
+		<script src="assets/js/map-icons.js"></script>
+		<script src="assets/js/maps.js"></script>
+		<script src="assets/js/maps2.js"></script>
+		<script src="unslider-master/dist/js/unslider.js"></script>
+		<script src="assets/js/unslider_custom_maps2.js"></script>
+		<script src="assets/js/toggle.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-75359937-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+		<!-- Load all Javascript (jQuery 1.8.3 files)  -->
+		<script>
+			// Put jQuery 1.8.3 into noConflict mode.
+			var $jq1 = jQuery.noConflict(true);
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+	<body id="top">
+		<!-- Header -->
+		<header id="header">
+			<div id="map-canvas"></div>
+		</header><!--header-->
+		<!-- Main -->
+		<div id="main">
+			<!-- Section One -->
+			<section id="one">
+				<header class="major">
+					<h2 style="display: inline-block;" class="image avatar"><img src="http://i.imgur.com/ko5WgRi.jpg?1" />The Cink's Bay Area Recommendations</h2>
+				</header><!--header class="major"-->
+				<p>Welcome to our repository of highly recommended restaurants, attractions, bars, and wineries in San Francisco! Regardless of how you arrived at our site, we are excited to share our favorite spots in the Bay Area.</p>
+			</section><!--section id="one"-->
+			<!-- Section Two -->
+			<section id="two">
+				<div class="horizontalScrollingDiv">
+					<div class="container">
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#food" data-toggle="pill">Food</a></li>
+							<li><a href="#drink" data-toggle="pill">Drink</a></li>
+							<li><a href="#attractions" data-toggle="pill">Attractions</a></li>
+							<li><a href="#wine" data-toggle="pill">Wine</a></li>
+							<li id="neighborhoodnavdiv"><a href="#neighborhoods" data-toggle="pill">Neighborhoods</a></li>
+							<li id="walksID"><a id="favoriteWalksNavDiv" href="#favoriteWalks" data-toggle="pill">Walks</a></li>
+						</ul><!--ul class = "nav nav-pills"-->
+					</div><!--div class="container"-->
+				</div><!--div class="horizontalScrollingDiv"-->
+			</section><!--section id="two"-->
+			<!-- Section Three -->
+			<section id="three">
+				<div class="tab-content">
+			    <div class="tab-pane fade in active" id="food">
+						<section id="three-one">
+							<h2>Food</h2>
+							<div class="row">
+								<article class="6u 12u$(xsmall) work-item" name="isa" data-icon="map-icon-food">
+									<a href="http://s3-media2.fl.yelpcdn.com/bphoto/fWR0Hlg7j0dr4EQrOmbK5g/o.jpg" class="image fit thumb"><img src="http://media-cdn.tripadvisor.com/media/photo-s/03/06/cd/b1/isa.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/isa-restaurant-san-francisco" style="text-decoration: none">Isa Restaurant</a></h3>
+									<p>Our favorite restaurant in the <strong>Marina District</strong>. All food is served tapas style and meant to be shared. Robust wine list available. Ask to sit on the back patio!</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="offthegrid" data-icon="map-icon-food">
+									<a href="http://www.upout.com/blog/wp-content/uploads/15796014272_ef43206e18_k-1140x500.jpg?fc2cc6" class="image fit thumb"><img src="http://cdn.funcheap.com/wp-content/uploads/2014/06/3.14.2014_OTG_Ft.Mason_GammaNine_6578.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/off-the-grid-fort-mason-center-san-francisco-3" style="text-decoration: none">Off the Grid</a></h3>
+									<p>Food Trucks at <strong>Fort Mason</strong> on Friday nights offers a variety of cuisines. You'll find live music, local beers, and even spiced wine on chillier evenings.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="littlestarpizza" data-icon="map-icon-food">
+									<a href="http://askmissa.com/wp-content/uploads/2011/08/l1.jpg" class="image fit thumb"><img src="http://www.littlestarpizza.com/images/New_Images/divis_int1.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/little-star-pizza-san-francisco" style="text-decoration: none">Little Star Pizza</a></h3>
+									<p>Favorite pizza in the city with fresh toppings and cornmeal crust. Located in <strong>NOPA</strong> - get there early because they don't take reservations! Open on Fridays for lunch.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="foreigncinema" data-icon="map-icon-food">
+									<a href="http://www.foreigncinema.com.php53-23.ord1-1.websitetestlink.com/silvernitrate/wp-content/uploads/2012/10/ForeignCinema-242.jpg" class="image fit thumb"><img src="http://www.foreigncinema.com.php53-23.ord1-1.websitetestlink.com/silvernitrate/wp-content/uploads/2012/10/options-back-18.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/foreign-cinema-san-francisco" style="text-decoration: none">Foreign Cinema</a></h3>
+									<p>Old movie theatre turned into a trendy, upscale restaurant in the <strong>Mission District</strong>. Eclectic atmosphere - brick walls, intimate lighting, and a black and white movie projected on the wall.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item " name="missionchinese" data-icon="map-icon-food">
+									<a href="http://www.panache.voyage/wp-content/uploads/2013/08/mission-chinese2.jpg" class="image fit thumb"><img src="http://farm8.staticflickr.com/7170/6409253249_a45dae0552.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/mission-chinese-food-san-francisco-4" style="text-decoration: none">Mission Chinese Food</a></h3>
+									<p>Non-traditional Chinese Food in the <strong>Mission District</strong>. Originally a pop-up restaurant that was temporarily located inside of Lung Shan Restaurant, this spicy menu is a San Francisco favorite!</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="delarosa" data-icon="map-icon-food">
+									<a href="http://insidescoopsf.sfgate.com/files/2011/08/delarosapie.jpg" class="image fit thumb"><img src="https://s-media-cache-ak0.pinimg.com/736x/26/8f/51/268f51cc46cf683f3d38f7faf160e17c.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/delarosa-san-francisco">Delarosa</a></h3>
+									<p>Trendy Italian eatery with wood-fired pizzas in the <strong>Marina District</strong>. Incredible cocktails made my mixologists in a loud, fun atmosphere. Try the Diablo - it's GA's favorite!</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="brendas" data-icon="map-icon-food">
+									<a href="http://ww2.hdnux.com/photos/33/55/26/7263649/5/920x920.jpg" class="image fit thumb"><img src="http://ww1.hdnux.com/photos/33/55/26/7263652/5/1024x1024.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/brendas-meat-and-three-san-francisco-3">Brenda's Meat and Three</a></h3>
+									<p>New Orleans “soul food” brunch located in <strong>NOPA</strong>. Quaint back patio.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="flourandwater" data-icon="map-icon-food">
+									<a href="http://s3-media2.fl.yelpcdn.com/bphoto/biqXYaPAgr9GLNqvI9p22g/o.jpg" class="image fit thumb"><img src="https://twentyfivethirtyfive.files.wordpress.com/2013/04/img_2038.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/flour-water-san-francisco">Flour + Water</a></h3>
+									<p>Italian restaurant in the <strong>Mission District</strong> rumored to have made even Steve Jobs wait for a table. Incredible food, very long lines and unfortunately no reservations.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="umamiburger" data-icon="map-icon-food">
+									<a href="http://assets3.thrillist.com/v1/image/1120068/size/tl-horizontal_main/10-reasons-you-re-glad-there-s-an-umami-burger-in-soma" class="image fit thumb">
+									<img src="https://cdn0.vox-cdn.com/thumbor/2Wkc3-Uylu9lCST0YT_m41qFJhU=/0x46:868x534/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/38864194/soma_bar__281_of_1_29__large.0.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/umami-burger-san-francisco">Umami Burger</a></h3>
+									<p>Best burger in the city. Laid-back atmosphere and typically easy to walk-in for a table. Located in Cow Hollow on busy Union Street.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="birite" data-icon="map-icon-food">
+									<a href="http://keepitsweetdesserts.com/wp-content/uploads/2012/08/Bi-Rite-5.jpg" class="image fit thumb">
+									<img src="http://d1x6zkqyb2gtqn.cloudfront.net/wp-content/uploads/2013/04/Front-good.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/bi-rite-market-san-francisco-3">Bi-Rite</a></h3>
+									<p>Hands down the best ice cream we’ve ever had. Originally began as a locally sourced market. There are two locations, one in the <strong>Mission District</strong> near Dolores Park and one in <strong>NOPA</strong> near Alamo Square.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="greenchilekitchen" data-icon="map-icon-food">
+									<a href="http://s3-media3.fl.yelpcdn.com/bphoto/9jS4g8GyEcYTQ38ABLwcAw/o.jpg" class="image fit thumb">
+									<img src="http://s3-media1.fl.yelpcdn.com/bphoto/iojj-fDpfWVpQKRpmQ04Pg/o.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/green-chile-kitchen-san-francisco">Green Chile Kitchen</a></h3>
+									<p>An interesting twist on Mexican cuisine. Located in <strong>NOPA</strong>, this is a fantastic (quick) option for lunch or dinner.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="lemaraisbakery" data-icon="map-icon-bakery">
+									<a href="http://i.imgur.com/sbuIgjH.jpg" class="image fit thumb">
+									<img src="http://i.imgur.com/MSx6i29.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/le-marais-bakery-san-francisco-4">Le Marais Bakery</a></h3>
+									<p>A new <strong>Marina</strong> favorite. Stop by for a croissant and coffee or sit down for brunch and try their avocado toast or eggs benedict!</p>
+								</article>
+							</div><!-- div row -->
+						</section><!-- section id="three-one" -->
+			    </div><!-- div class="tab-pane fade in active" id="food" -->
+					<div class="tab-pane fade in" id="drink">
+						<section id="three-two">
+							<h2>Drink</h2>
+							<div class="row">
+								<article class="6u 12u$(xsmall) work-item" name="eltecho" data-icon="map-icon-night-club">
+									<a href="http://drinks.seriouseats.com/assets_c/2013/05/20130514-techo-3-thumb-625xauto-326460.jpg" class="image fit thumb"><img src="http://static.urbandaddy.com/uploads/assets/image/articles/standard/58963ecfd2b242587e9c97f0fd019870912d54b7.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/el-techo-de-lolinda-san-francisco-2">El Techo de Lolinda</a></h3>
+									<p>Rooftop Mexican tapas bar and in the <strong>Mission District</strong>. Reservations only taken for brunch. If there’s a wait, grab a drink at Lolinda on the ground level.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="biergarten" data-icon="map-icon-night-club">
+									<a href="http://www.modernluxury.com/sites/default/files/imagecache/story-photo-with-inset-main/story/biergarten-bier.jpg" class="image fit thumb"><img src="http://media2.fdncms.com/sfweekly/imager/biergarten-on-a-sunny-spring-afternoon/u/original/3134618/biergarten_sf.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/biergarten-san-francisco">Biergarten</a></h3>
+									<p>Exactly what it sounds like. You'll find a variety of beers (get a boot) and German bar-type food. Located in the middle of the city in <strong>Hayes Valley</strong>.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="southernpacificbrewery" data-icon="map-icon-night-club">
+									<a href="http://s3-media3.fl.yelpcdn.com/bphoto/IV96rdD95RQN0eNKQGoNBw/o.jpg" class="image fit thumb"><img src="http://s3-media1.fl.yelpcdn.com/bphoto/EykFiZdDouGkolADenTp9A/o.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/southern-pacific-brewing-san-francisco">Southern Pacific Brewery</a></h3>
+									<p>Large brewery in a warehouse located in the <strong>Mission District</strong>. They have a great menu full of bar food. Indoor and outdoor seating, so it is a solid spot regardless of the weather.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="maunaloa" data-icon="map-icon-night-club">
+									<a href="http://s3-media2.fl.yelpcdn.com/bphoto/pD5rcYm9Zm5jRwZUNzcBOw/o.jpg" class="image fit thumb"><img src="http://s3-media4.fl.yelpcdn.com/bphoto/AVvy8WIPTett-9rirnT0ag/o.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/mauna-loa-club-san-francisco">Mauna Loa</a></h3>
+									<p>Dive bar in <strong>Cow Hollow</strong>. It has everything from pop-a-shot to Big Buck Hunter. Cash only, but there is an ATM at the entrance.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item " name="tongaroomhurricanebar" data-icon="map-icon-night-club">
+									<a href="http://s3-media4.fl.yelpcdn.com/bphoto/O-7W84P4HkG-nRUO6J5HAQ/o.jpg" class="image fit thumb"><img src="http://s3-media4.fl.yelpcdn.com/bphoto/DvvSAidBbaY0VoQJ4IoUEw/o.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/tonga-room-and-hurricane-bar-san-francisco">Tonga Room and Hurricane Bar</a></h3>
+									<p>Go for the tropical drinks, rainforest setting, and floating live music in the bottom of the Fairmont Hotel in <strong>Nob Hill</strong>.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="bourbonandbranch" data-icon="map-icon-night-club">
+									<a href="http://insidescoopsf.sfgate.com/files/2010/12/bbranch.jpg" class="image fit thumb"><img src="http://anthem-uploads.s3.amazonaws.com/wp-content/uploads/bourbonbranch.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/bourbon-and-branch-san-francisco">Bourbon and Branch</a></h3>
+									<p>Speakeasy found in the <strong>Tenderloin</strong>. Email for a reservation and a password to enter, or enjoy a cocktail in the library which is open to anyone. It can be a little tricky to find from the street!</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="theintervalatlongnow" data-icon="map-icon-night-club">
+									<a href="http://s3-media3.fl.yelpcdn.com/bphoto/2ibyTErSzKsMw-fBlzUhlw/o.jpg" class="image fit thumb"><img src="http://s3-media2.fl.yelpcdn.com/bphoto/XYsH0vJiqd-cZ-Eo_E9uhg/o.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/the-interval-at-long-now-san-francisco">The Interval at Long Now</a></h3>
+									<p>A nerd’s dream located in Fort Mason in the <strong>Marina</strong>. Think upscale science projects in a library with strong cocktails.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="californiawinemerchant" data-icon="map-icon-night-club">
+									<a href="https://wayfaringamanda.files.wordpress.com/2012/05/img_3662.jpg" class="image fit thumb"><img src="https://wayfaringamanda.files.wordpress.com/2012/05/img_3658.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/california-wine-merchant-san-francisco">California Wine Merchant</a></h3>
+									<p>Quaint wine bar that feels like a cellar. They have a fabulous cheese and nut plate you can purchase to enjoy with your wine. Located in the <strong>Marina</strong> and can get rowdy later in the night!</p>
+								</article>
+							</div><!-- div class="row" -->
+						</section><!-- section id="three-two" -->
+	        </div><!-- class="tab-pane fade in" id="drink" -->
+					<div class="tab-pane fade in" id="attractions">
+						<section id="three-three">
+							<h2>Attractions</h2>
+							<div class="row">
+								<article class="6u 12u$(xsmall) work-item" name="alcatraz" data-icon="map-icon-park">
+									<a href="https://www.alcatrazislandtickets.com/images/Alcatraz-Aerial-400334.jpg" class="image fit thumb"><img src="http://www.sanfrancisco.net/pictures/alcatraz-cell-block.jpg" height="272" alt="" /></a><h3><a target="_blank" href="http://www.alcatrazislandtickets.com">Alcatraz</a></h3>
+									<p>Touristy, but totally worth it. Incredible views of the bay and packed with history. There is a sunset tour during summer months. Be sure to buy tickets in advance.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="dolorespark" data-icon="map-icon-park">
+									<a href="http://fermatatown.com/wp-content/uploads/2013/05/Mission-Dolores-Park.jpg" class="image fit thumb"><img src="http://i.imgur.com/f1ognXW.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/dolores-park-san-francisco">Dolores Park</a></h3>
+									<p>Our favorite park in the city located in the <strong>Mission District</strong>. Endless people watching with an incredilble view of the skyline. A great spot for a picnic and day drinking.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="alamosquare" data-icon="map-icon-park">
+									<a href="http://stockarch.com/files/12/06/painted_ladies_alamo_square.jpg" class="image fit thumb"><img src="https://a1.muscache.com/locations/uploads/photo/image/11534/0_4200_0_2800_one_san-francisco-park-mb9665.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/alamo-square-san-francisco">Alamo Square</a></h3>
+									<p>Another fantastic park found in NOPA that gives you both fantastic view of downtown in addition to the Painted Ladies.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="bikethegoldengatebridge" data-icon="map-icon-bicycle-store">
+									<a href="http://www.blazingsaddles.com/sites/default/files/styles/sc_1280x786_home_page/public/home-images/original-San-Francisco.jpg?itok=pYT-uKp3" class="image fit thumb"><img src="https://www.udctours.com/imgs/sfw-jensa-bridge.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.sportsbasement.com/rentals/san-francisco-bike-rentals/">Bike the Golden Gate Bridge</a></h3>
+									<p>Biking the bridge, hitting Sausalito, and ferrying back is a must. There are plenty of bike rental spots, but we ususally recommend Sports Basement in the Presidio. If you spend some time in Sausalito, grab a drink at Bar Bocce or brunch at Fred's. There's also Paddle Board Yoga in Sausalito if that's up your alley!</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item " name="goldengatepark" data-icon="map-icon-park">
+									<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Golden_Gate_Park_air_2.jpg/900px-Golden_Gate_Park_air_2.jpg" class="image fit thumb"><img src="http://cdn.funcheap.com/wp-content/uploads/2015/09/windmills.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/golden-gate-park-san-francisco">Golden Gate Park</a></h3>
+									<p>There's everything from a bison field, botanical gardens, an archer field and a disc golf course in the park. The de Young Museum is also of note and they have a free observation deck that gives you a 360 view of the city. The Tea Garden is also a famous stop in the park as well as renting a paddleboat and cruising around Stow Lake.</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="sutrobaths" data-icon="map-icon-park">
+									<a href="http://ithoughthecamewithyou.com/uploaded_images/baths-768035.jpg" class="image fit thumb">
+									<img src="http://s3-media2.fl.yelpcdn.com/bphoto/mL_Y4MNWdFuEn3yQQFnQgw/o.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/sutro-baths-san-francisco">Sutro Baths</a></h3>
+									<p>Nestled in between Ocean Beach and the Presidio on the coast, Sutro Bath ruins are the remnants of an old bath house. You'll find amazing views of the Pacific (we've spotted whales before!) and some caves that we actually went to a rave in. Interesting history here - get some clam chowder at Cliff House and read about the history.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="angelisland" data-icon="map-icon-park">
+									<a href="http://staysf.com/upload/attraction/20080519171131_san%20francisco%20angel%20island.jpg" class="image fit thumb">
+									<img src="https://saf.cruisingclub.org/files/saf/documents/AyalaCove.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/angel-island-state-park-tiburon">Angel Island</a></h3>
+									<p>Take a ferry from the Ferry Building or Pier 41 to this island in the bay. There is some history here as it used to be a Japanese internment camp. If it's a nice day, hike to the top and where you will have 360 view of the bay. This is where Brad proposed!</p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="hikinginmarin" data-icon="map-icon-trail-walking">
+									<a href="https://anotherheader.files.wordpress.com/2010/03/dsc_7763.jpg" class="image fit thumb">
+									<img src="http://images.summitpost.org/original/877223.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.everytrail.com/best/hiking-marin-california">Hiking in Marin</a></h3>
+									<p>Marin is the county just across Golden Gate Bridge. There are many high-elevation hikes to the top of the redwoods (Muir Woods) in addition to breathtaking coastal views. Shuck your own oysters at Hog Island or Tomales Bay. When crossing into Marin over the bridge, take your 2nd exit for the best Golden Gate picture at Marin Headlands!</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="ferrybuilding" data-icon="map-icon-sailing">
+									<a href="http://page-turnbull.com/wp-content/uploads/Ferry_Building_5.jpg" class="image fit thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/San_Francisco_Ferry_Building_(cropped).jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.yelp.com/biz/ferry-building-marketplace-san-francisco">Ferry Building</a></h3>
+									<p>Check out the Farmer's market on Saturday morning for breakfast or lunch. All sorts of local goods with a view of the water. </p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="giantsgame" data-icon="map-icon-baseball">
+									<a href="http://static1.squarespace.com/static/550aecdfe4b01c3e29ab4a5d/t/550e2b86e4b02bbdcb5308e2/1426992007608/18_1sanfranciscogiants5600_1.jpg?format=1500w" class="image fit thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/ATT_Sunset_Panorama.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://sanfrancisco.giants.mlb.com/ticketing/index.jsp?c_id=sf">Giants Game</a></h3>
+									<p>AT&amp;T Park sits on the water. Fans kayak to catch foul balls! Get the garlic fries and bundle up if you go to a night game. There's a Public House on the ground level that has cheaper beers than concessions.</p>
+								</article>
+								<article class="6u 12u$(xsmall) work-item" name="thehaight" data-icon="map-icon-park">
+									<a href="http://www.hypeness.com.br/wp-content/uploads/2014/12/sf5.jpg" class="image fit thumb"><img src="http://ww4.hdnux.com/photos/07/22/70/1912347/5/920x920.jpg" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.sfcityguides.org/desc.html?tour=38">The Haight</a></h3>
+									<p>Home to the hippies beginnning with the Summer of Love in 1967. There are still trippy remnants of this movement with homeless teenagers roaming the neighorhood. You can take a walking tour of all of the famous homes including the Grateful Dead, Janis Joplin, and Jimmy Hendrix. Walk to Hippy Hill on the edge of Golden Gate Park for drum circles, hoola-hooping and pot brownies. </p>
+								</article>
+								<article class="6u$ 12u$(xsmall) work-item" name="muirwoods" data-icon="map-icon-trail-walking">
+									<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Muir_Woods_National_Monument_08.jpg/1280px-Muir_Woods_National_Monument_08.jpg" class="image fit thumb"><img src="http://static1.squarespace.com/static/54c19247e4b03dfa2a251e1e/54c2def2e4b0ef5f4ba59eb6/54c2def2e4b0ef5f4ba59eb7/1422564067429/1.jpg?format=1500w" height="272" alt="" /></a>
+									<h3><a target="_blank" href="http://www.nps.gov/muwo/index.htm">Muir Woods</a></h3>
+									<p>National park of a redwood grove about 30 minutes over the Golden Gate Bridge in Marin. There are a lot of hiking trails that you can get on from the park that go into Marin headlands. $7 to enter. </p>
+								</article>
+							</div><!-- div class="row" -->
+						</section><!-- section id="three-three" -->
+					</div><!-- div class="tab-pane fade in" id="attractions" -->
+					<div class="tab-pane fade in" id="wine">
+						<section id="three-five">
+							<h2>Wine Country</h2>
+							<div class="container">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#wineCountryTasting" data-toggle="tab" data-r481="Wine Tasting">Wine</a></li>
+									<li><a href="#wineCountryRestaurants" data-toggle="tab" data-r481="Restuarants">Food</a></li>
+								</ul><!-- class="nav nav-tabs"-->
+							</div><!--container-->
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="wineCountryTasting">
+									<div class="row">
+										<article class="6u 12u$(xsmall) work-item" name="frogsleap" data-icon="map-icon-liquor-store">
+											<a href="http://rubinphotography.com/wp-content/uploads/2012/02/Napa-Valley-Food-and-Wine-Photographer001.jpg" class="image fit thumb"><img src="http://i.imgur.com/eQ47g0n.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.frogsleap.com" style="text-decoration: none">Frog's Leap</a></h3>
+											<p>It has an old farm feel with vegetable gardens, chicken coops, yard games, and lawn chairs all beside the grapes.</p>
+										</article>
+										<article class="6u$ 12u$(xsmall) work-item" name="caymus" data-icon="map-icon-liquor-store">
+											<a href="http://i.imgur.com/smney7i.jpg" class="image fit thumb"><img src="http://i.imgur.com/sPzwkKB.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.caymus.com" style="text-decoration: none">Caymus Vineyards</a></h3>
+											<p>Grace Ann's favorite wine: this spot is relaxed and quaint with a charming patio. The Wagoner family has several labels, each created by a different family member.</p>
+										</article>
+										<article class="6u 12u$(xsmall) work-item" name="paraduxx" data-icon="map-icon-liquor-store">
+											<a href="http://i.imgur.com/p7SnlvM.jpg" class="image fit thumb"><img src="http://i.imgur.com/8Yjp8ww.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.paraduxx.com" style="text-decoration: none">Paraduxx Winery</a></h3>
+											<p>A beautiful, modern location for wine tasting. The Duckhorn Group's wines are renowned in the Napa area.</p>
+										</article>
+										<article class="6u$ 12u$(xsmall) work-item" name="minerfamily" data-icon="map-icon-liquor-store">
+											<a href="http://i.imgur.com/wfuURpp.jpg" class="image fit thumb"><img src="http://i.imgur.com/wau6jaS.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://minerwines.com" style="text-decoration: none">Miner Family</a></h3>
+											<p>One of the few wineries open until 5PM, this has become our last stop when we aren't ready to leave wine country! Sits on a hill with great view of the valley.</p>
+										</article>
+										<article class="6u 12u$(xsmall) work-item " name="sinskey" data-icon="map-icon-liquor-store">
+											<a href="http://i.imgur.com/YScanza.jpg" class="image fit thumb"><img src="http://i.imgur.com/GRvUov1.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.robertsinskey.com" style="text-decoration: none">Robert Sinskey Vineyards</a></h3>
+											<p>Situated on a hill with a spectacular view. A small cheese plate is included with each tasting.</p>
+										</article>
+										<article class="6u$ 12u$(xsmall) work-item" name="swanson" data-icon="map-icon-liquor-store">
+											<a href="http://i.imgur.com/9k1DY7x.jpg" class="image fit thumb"><img src="http://i.imgur.com/dSGLZno.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.swansonvineyards.com">Swanson</a></h3>
+											<p>We joined their wine club after an eclectic experience that included caviar on a potato chip paired with Chardonnay. Reservation required for both an informal tasting at the Sip Shoppe as well as for a formal tasting in the salon.</p>
+										</article>
+										<article class="6u 12u$(xsmall) work-item" name="honig" data-icon="map-icon-liquor-store">
+											<a href="http://i.imgur.com/yXiCGyg.jpg" class="image fit thumb"><img src="http://i.imgur.com/dIoYFVz.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.honigwine.com">Honig</a></h3>
+											<p>A sustainaby-farmed vineyard. A little off the beaten path, leaving you surrounded by vineyards. We loved their Sauvignon Blancs, which is unusual as the area is known for big reds.</p>
+										</article>
+										<article class="6u$ 12u$(xsmall) work-item" name="fleury" data-icon="map-icon-liquor-store">
+											<a href="http://i.imgur.com/DE0jcKI.jpg" class="image fit thumb"><img src="http://i.imgur.com/e0ZIb2A.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.fleurywinery.com">Fleury Estate Winery</a></h3>
+											<p>While this is not your typical Napa wine tasting experience, Fleury has one of our favorite Cabs in Napa and a very private feel. Be prepared to taste inside their cellar: (bring a jacket).</p>
+										</article>
+									</div><!-- div row -->
+								</div><!-- div row fade in -->
+								<div class="tab-pane fade in" id="wineCountryRestaurants">
+									<div class="row">
+										<article class="6u 12u$(xsmall) work-item" name="oakville" data-icon="map-icon-restaurant">
+											<a href="http://i.imgur.com/ZWk3aLX.jpg" class="image fit thumb"><img src="http://i.imgur.com/xgA1WGZ.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.oakvillegrocery.com/Home/Stores" style="text-decoration: none">Oakville Grocery</a></h3>
+											<p>It has an old farm feel with vegetable gardens, chicken coops, yard games, and lawn chairs all beside the grapes.</p>
+										</article>
+										<article class="6u$ 12u$(xsmall) work-item" name="redd" data-icon="map-icon-restaurant">
+											<a href="http://i.imgur.com/3WItKyV.jpg" class="image fit thumb"><img src="http://i.imgur.com/BWWqO2i.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://reddnapavalley.com" style="text-decoration: none">Redd</a></h3>
+											<p>Our favorite dinner in Napa. If you're looking for a dinner that's a little less formal, check out their sister restaurant Redd Wood which is known for its wood-fired pizzas.</p>
+										</article>
+										<article class="6u 12u$(xsmall) work-item" name="lucy" data-icon="map-icon-restaurant">
+											<a href="http://i.imgur.com/ug1kIyL.jpg" class="image fit thumb"><img src="http://i.imgur.com/Gw1FSAm.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="http://www.bardessono.com/restaurant_bar" style="text-decoration: none">Lucy</a></h3>
+											<p>A modern, upscale spot in Yountville in the hotel Bardessono. Sit outside on the patio by the pond.</p>
+										</article>
+										<article class="6u$ 12u$(xsmall) work-item" name="solbar" data-icon="map-icon-restaurant">
+											<a href="http://i.imgur.com/HRMOUzF.jpg" class="image fit thumb"><img src="http://i.imgur.com/Ag8O541.jpg" height="272" alt="" /></a>
+											<h3><a target="_blank" href="https://www.solagecalistoga.com/dine/" style="text-decoration: none">Solbar</a></h3>
+											<p>Following our engagement, we made our way up to Calistoga for a special dinner. You can't go wrong by the patio or inside and will taste unique, flavorful and surprising dishes that reflect the best Napa Valley has to offer.</p>
+										</article>
+									</div><!-- div row -->
+								</div><!-- div tab fade in -->
+							</div><!-- div tab content -->
+						</section><!-- section id="three-five" -->
+			    </div><!-- div class="tab-pane fade in" id="wine" -->
+					<div class="tab-pane fade in" id="neighborhoods">
+						<section id="three-four">
+							<h2 id="block1">Neighborhoods</h2><span><a id="block2" style="float: right; text-decoration: none; font-size: 0.75em !important;" class="button togglebutton" data-r481="All Neighborhoods">All</a></span></br></br></br>
+							<div id="toggleNeighborhood">
+								<div class="row neighborhoods">
+									<p>Find the areas we recommend you consider for accommodation during your stay. Each neighborhood has a link to <a href="www.airbnb.com/c/bcink?s=8">Airbnb</a> for your reference.</p>
+									<article class="6u 12u$(xsmall) work-item" name="Marina District">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/marina" class="image fit thumb"><img src="http://i.imgur.com/p9QJ0i0.jpg" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/marina">Marina District</a></h3>
+									</article>
+									<article class="6u$ 12u$(xsmall) work-item" name="Cow Hollow">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/cow-hollow" class="image fit thumb"><img src="http://i.imgur.com/MjydMvF.jpg" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/cow-hollow">Cow Hollow</a></h3>
+									</article>
+									<article class="6u 12u$(xsmall) work-item" name="Russian Hill">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/russian-hill" class="image fit thumb"><img src="http://i.imgur.com/yO46HDp.jpg" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/russian-hill">Russian Hill</a></h3>
+									</article>
+									<article class="6u$ 12u$(xsmall) work-item" name="NOPA">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/western-addition-nopa" class="image fit thumb"><img src="http://i.imgur.com/tORewzL.jpg" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/western-addition-nopa">NOPA</a></h3>
+									</article>
+									<article class="6u 12u$(xsmall) work-item" name="Pacific Heights">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/pacific-heights" class="image fit thumb"><img src="http://i.imgur.com/PhxNPFT.jpg" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/pacific-heights">Pacific Heights</a></h3>
+									</article>
+									<article class="6u$ 12u$(xsmall) work-item" name="Mission District">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/mission-district" class="image fit thumb"><img src="http://i.imgur.com/DWYOVpU.jpg" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/mission-district">Mission District</a></h3>
+									</article>
+									<article class="6u 12u$(xsmall) work-item" name="North Beach">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/north-beach" class="image fit thumb"><img src="http://i.imgur.com/itUQXz2.jpg" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/north-beach">North Beach</a></h3>
+									</article>
+									<article class="6u$ 12u$(xsmall) work-item" name="Hayes Valley">
+									  <a target="_blank" href="https://www.airbnb.com/locations/san-francisco/hayes-valley" class="image fit thumb"><img src="http://i.imgur.com/7csBAhn.jpg?1" height="272" alt="" /></a><h3><a target="_blank" href="https://www.airbnb.com/locations/san-francisco/hayes-valley">Hayes Valley</a></h3>
+									</article>
+								</div>
+							</div>
+						</section><!-- section id="three-four" -->
+					</div><!-- div class="tab-pane fade in" id="neighborhoods" -->
+					<div class="tab-pane fade in" id="favoriteWalks">
+						<section id="three-five">
+							<h2 class="favWalksH2">Favorite Walks</h2>
+							<div class="row">
+								<section id="three-five-one">
+									<div class="horizontalScrollingDiv">
+										<div class="container">
+											<ul class="nav nav-tabs walkingTabs">
+											  <li class="active"><a href="cableCarWalkingRoute" data-toggle="tab" data-r481="Cable Car Route">CR</a></li>
+											  <li><a href="goldenGateBridgeWalkingRoute" data-toggle="tab" data-r481="Bridge Route">BR</a></li>
+												<li><a href="goldenGateParkWalkingRoute" data-toggle="tab" data-r481="Park Route">PR</a></li>
+											</ul><!-- class="nav nav-tabs"-->
+										</div><!--container-->
+									</div><!-- class="horizontalScrollingDiv"-->
+								</section><!--section id="three-five-one"-->
+								<div class="tab-content">
+									<div class="my-slider tab-pane fade in active">
+										<div class="iframe-rwd">
+											 <iframe id="iframeID"></iframe><small><div id="map_canvas2"></div></small>
+										</div><!--div class-"iframe-rwd"-->
+										<ul class="walkingRoutesDiv" style="text-align: center;">
+											<li class="cableCarli0" data-lat="37.802094" data-lng="-122.443079" data-icon="null"><strong>Cable Car Route: </strong>Walk from our home to Marina Blvd and head East. The whole route is <bold class="insertMiles"></bold> miles</li>
+											<li class="cableCarli1" data-lat="37.805471" data-lng="-122.429343" data-icon="map-icon-viewing">Head up the hill through Ft. Mason and past the Aquatic Park</li>
+											<li class="cableCarli2" data-lat="37.805638" data-lng="-122.420423" data-icon="map-icon-train-station">Take a right on Hyde St. and pass the Powell-Hyde Cable Car Turntable and continue to Hyde and North Point St. to catch the next cable car with less of the tourist traffic </li>
+											<li class="cableCarli3" data-lat="37.802052" data-lng="-122.419629" data-icon="map-icon-skateboarding">Ride the cable car up the hill and hop out at the curvy part of Lombard St. to grab an iconic San Francisco shot. Catch the next cable car: they run every ten minutes or so</li>
+											<li class="cableCarli4" data-lat="37.788013" data-lng="-122.407375" data-icon="map-icon-clothing-store">Continue your ride all the way down to Sutter St. and walk a block to Union Square</li>
+											<li class="cableCarli5" data-lat="37.795584" data-lng="-122.392944" data-icon="map-icon-sailing">Finish your walk at Union Square or continue to the Ferry Building as you walk down Market St.</li>
+										</ul><!--ul class="walkingRoutesDiv"-->
+									</div><!--div class="my-slider tab-pane fade in active"-->
+								</div><!--div class="tab-content"-->
+							</div><!--div class="row"-->
+						</section><!--section id="three-five"-->
+					</div><!--div class="tab-pane fade in" id="favoriteWalks"-->
+				</div><!-- div class="tab-content"-->
+			</section><!--section id="three"-->
+		</div><!--div id="main"-->
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul><!-- ul class="icons" -->
+			<ul class="copyright">
+				<li>&copy; Brad Cink</li><li>Design Attribute: <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+			</ul><!-- ul class="copyright" -->
+		</footer><!-- footer id="footer" -->
+		<!-- Scripts -->
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
